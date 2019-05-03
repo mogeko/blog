@@ -81,7 +81,7 @@ preserveTaxonomyNames = true
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "936cecdd2ab935870ca5" # Your client ID
     clientSecret = "39cfc7a3cb9a974b6609f3fdaa637e2917e3e40a" # Your client secret
-    repo = "Blog" # The repo to store comments
+    repo = "blog-commits" # The repo to store comments
     owner = "Mogeko" # Your GitHub ID
     admin= "Mogeko" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
     id= "location.pathname" # The unique id of the page.
