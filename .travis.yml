@@ -1,0 +1,52 @@
+language: go
+
+go:
+  - "1.8"  # 指定Golang 1.8
+
+env:
+ global:
+   # Github Pages
+   - GH_REF: github.com/Mogeko/mogeko.github.io
+
+# Specify which branches to build using a safelist
+# 分支白名单限制：只有 master 分支的提交才会触发构建
+# branches:
+#   only:
+#     - master
+
+before_install:
+  # 安装 hugo （version: v0.54.0）
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  # 安装主题
+  - git clone https://github.com/Mogeko/LeaveIt.git themes/LeaveIt
+
+install:
+# 运行hugo命令
+  - hugo
+
+script:
+  - cd ./public
+  - git init
+  - git config user.name "Mogeko"
+  - git config user.email "zhengjunyi@live.com"
+  - git add .
+  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+
+# before_deploy:
+#   # 防止其与 mogeko.github.io 冲突
+#   - rm -f CNAME
+
+# # 备份
+# deploy:
+#   provider: pages # 重要，指定这是一份github pages的部署配置
+#   skip-cleanup: true # 重要，不能省略
+#   local-dir: public # 静态站点文件所在目录
+#   # target-branch: master # 要将静态站点文件发布到哪个分支
+#   github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
+#   # fqdn: blog.yuantops.com # 如果是自定义域名，此处要填
+#   keep-history: true # 是否保持target-branch分支的提交记录
+#   on:
+#     branch: master # 博客源码的分支
