@@ -1,0 +1,49 @@
+#!/bin/bash
+
+NOW_PATH=`pwd`
+
+push() {
+    cd $1
+    git add .
+    git commit -m "Update: $(date +%Y-%m-%d)"
+    git push
+    cd $NOW_PATH
+
+}
+
+server() {
+    cd $BLOG_PATH
+    hugo server
+    cd $NOW_PATH
+}
+
+new() {
+    cd $BLOG_PATH
+    num=0
+    while true; do
+        file_num=`echo ${num}|awk '{printf("%03d\n", $0)}'`
+        file="$BLOG_PATH/content/posts/${file_num}.md"
+        if test -f $file; then
+            let num+=1
+        else
+            hugo new posts/${file_num}.md
+            mkdir static/blog-images/${file_num}
+            break
+        fi
+    done
+    cd $NOW_PATH
+}
+
+if [ ! -z "$1" ]; then
+    if [ "$1" == "push" ]; then
+        echo "===Push Images==="
+        push $BLOG_PATH/static/blog-images
+        echo ""
+        echo "===Push Posts==="
+        push $BLOG_PATH
+    fi
+    [ "$1" == "server" ] && server
+    [ "$1" == "new" ] && new
+else
+    cd $BLOG_PATH
+fi
