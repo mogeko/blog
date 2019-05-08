@@ -12,7 +12,7 @@
 
 [README](https://mogeko.github.io/2019/047/)
 
-## 关于软件 <sup style="color:#39b54a" >beta</sup>
+## KMS 激活服务 <sup style="color:#39b54a" >beta</sup>
 KMS 服务器地址：<input type="text" name="url" value="kms.mogeko.me">
 
 用来激活 VoL 版的 Microsoft Windows 和 Microsoft Office
