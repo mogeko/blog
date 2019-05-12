@@ -3,7 +3,7 @@
 ---
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
-<img alt="" src="https://mogeko.github.io/blog-images/test/" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/" >
 <span class="spoiler" ></span>
 &emsp;&emsp;
  -->
@@ -172,33 +172,33 @@ webp 图片兼容性测试
 
 ### 原图 &ensp;&emsp;&emsp;&emsp; 大小：804.5 KB
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_comparison.png" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_comparison.png" >
 
 ## 测试组
 
 ### 无损 &ensp;&emsp;&emsp;&emsp; 大小：555.6 KB&emsp; 体积减少：31 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test1.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test1.webp" >
 
 ### 有损 -q 100&emsp;大小：190 KB &ensp;&emsp; 体积减少：76.4 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test2.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test2.webp" >
 
 ### 有损 -q 80&ensp;&emsp;大小：49.3 KB&ensp;&emsp; 体积减少：93.9 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test3.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test3.webp" >
 
 ### 有损 -q 50&ensp;&emsp;大小：29.6 KB&ensp;&emsp; 体积减少：96.3 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test4.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test4.webp" >
 
 ### 有损 -q 30&ensp;&emsp;大小：21.8 KB &ensp;&emsp; 体积减少：97.3 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test5.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test5.webp" >
 
 ### 有损 -q 0&ensp;&ensp;&emsp;大小：7.9 KB&ensp;&ensp;&emsp; 体积减少：99 %
 
-<img alt="" src="https://mogeko.github.io/blog-images/test/webp_test6.webp" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test6.webp" >
 
 
 

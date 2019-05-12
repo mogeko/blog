@@ -6,7 +6,7 @@ tags: [""]
 categories: [""]
 ---
 <!-- 
-<img alt="" src="https://mogeko.github.io/blog-images/{{ replace .Name "-" " " | title }}/" >
+<img alt="" src="https://mogeko.github.io/blog-images/r/{{ replace .Name "-" " " | title }}/" >
 <span class="spoiler" ></span>
 &emsp;&emsp;
  -->
