@@ -11,3 +11,5 @@ Contact me:
 - Email: [zhengjunyi@live.com](mailto:zhengjunyi@live.com)
 
 - Github: [Mogeko](https://github.com/Mogeko)
+
+<img src="http://ghchart.rshah.org/mogeko" alt="Mogeko's Github chart" />
