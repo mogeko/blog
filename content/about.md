@@ -12,4 +12,6 @@ Contact me:
 
 - Github: [Mogeko](https://github.com/Mogeko)
 
+## My Github chart
+
 <img src="http://ghchart.rshah.org/mogeko" alt="Mogeko's Github chart" />
