@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: false
 tags: []
 categories: [""]
+featured_image: 
 ---
 <!-- 
 <img alt="" src="https://mogeko.github.io/blog-images/r/{{ replace .Name "-" " " | title }}/" >
