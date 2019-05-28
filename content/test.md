@@ -200,5 +200,20 @@ webp 图片兼容性测试
 
 <img alt="" src="https://mogeko.github.io/blog-images/r/test/webp_test6.webp" >
 
+# Test 4
+
+测试 FiraCode
+
+```livescript
+take = (n, [x, ...xs]:list) -->
+    | n <= 0 => []
+    | empty list => []
+    | otherwise => [x] ++ take n-1, xs
+
+last3 = reverse >> take 3 >> reverse
+```
+
+
+
 
 
