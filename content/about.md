@@ -14,4 +14,4 @@ Contact me:
 
 My Github chart:
 
-<img src="http://ghchart.rshah.org/mogeko" alt="Mogeko's Github chart" />
+<img src="http://ghchart.rshah.org/mogeko" alt="Mogeko's Github chart" style="width: 100%;" >
