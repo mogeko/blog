@@ -16,10 +16,8 @@ env:
 
 before_install:
   # 安装 hugo （version: v0.54.0）
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
   - sudo dpkg -i hugo*.deb
-  - gem install sass
-  - gem install compass
   # 安装主题
   # - git clone https://github.com/Mogeko/LeaveIt.git themes/LeaveIt
 
