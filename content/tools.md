@@ -1,8 +1,7 @@
 ---
- title: "Tools"
+ menu: "main"
  notsb: true
 ---
-
 
 # 几只住在本站的工具酱...
 
