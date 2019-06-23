@@ -7,14 +7,18 @@ steps:
   commands:
   - git submodule update --init --recursive
 
-# - name: build_scss
-
+- name: build_scss
+  image: ruby
+  commands:
+  - gem install sass
+  - mkdir -p resources/_gen/assets/scss/css/
+  - sass assets/css/main.scss:resources/_gen/assets/scss/css/main.min.css --style compressed
 
 - name: build
   image: plugins/hugo
   settings:
     hugo_version: 0.55
-    # validate: true
+    validate: true
 
 - name: publish  
   image: plugins/gh-pages
