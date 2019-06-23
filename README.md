@@ -1,6 +1,6 @@
 # My Blog
 
-[![Build Status](https://travis-ci.org/Mogeko/Blog.svg?branch=master)](https://travis-ci.org/Mogeko/Blog)
+[![Build Status](https://cloud.drone.io/api/badges/Mogeko/Blog/status.svg)](https://cloud.drone.io/Mogeko/Blog)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
 
