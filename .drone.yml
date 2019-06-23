@@ -12,7 +12,10 @@ steps:
   commands:
   - gem install sass
   - mkdir -p resources/_gen/assets/scss/css/
+  - cd themes/$THEME
   - sass assets/css/main.scss:resources/_gen/assets/scss/css/main.min.css --style compressed
+  environment:
+    THEME: LeaveIt
 
 - name: build
   image: plugins/hugo
