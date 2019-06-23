@@ -1,0 +1,20 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.55
+    validate: true
+
+- name: publish  
+  image: plugins/gh-pages
+  settings:
+    username:
+      from_secret: github_username
+    password:
+      from_secret: github_password
+    pages_directory: public/
+    upstream_name: mogeko.github.io
+    target_branch: master
