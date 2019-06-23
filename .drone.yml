@@ -10,6 +10,7 @@ steps:
 - name: build
   image: mogeko/hugo:0.55.6
   commands:
+  - chmod +x /bin/hugo
   - hugo
 
 - name: publish  
