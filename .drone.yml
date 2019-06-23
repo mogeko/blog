@@ -13,7 +13,7 @@ steps:
   - gem install sass
   - cd themes/$THEME
   - mkdir -p resources/_gen/assets/scss/css/
-  - sass assets/css/main.scss:resources/_gen/assets/scss/css/main.min.css --style compressed
+  - sass assets/css/main.scss:resources/_gen/assets/scss/css/main.min.css --no-cache --style compressed -E "UTF-8"
   environment:
     THEME: LeaveIt
 
