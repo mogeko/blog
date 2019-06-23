@@ -12,6 +12,7 @@ steps:
   commands:
   - apk --no-cache add git
   - wget -O- https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.tar.gz | tar xz -C /bin
+  - ls /bin
   - /bin/hugo
 
 - name: publish  
