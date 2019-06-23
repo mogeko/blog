@@ -1,7 +1,12 @@
 kind: pipeline
-name: default
+name: Blog
 
 steps:
+- name: install_themes
+  image: docker:git
+  commands:
+  - git submodule update --init --recursive
+
 - name: build
   image: plugins/hugo
   settings:
