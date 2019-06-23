@@ -7,21 +7,12 @@ steps:
   commands:
   - git submodule update --init --recursive
 
-- name: build_scss
-  image: ruby
-  commands:
-  - gem install sass
-  - cd themes/$THEME
-  - mkdir -p resources/_gen/assets/scss/css/
-  - sass assets/css/main.scss:resources/_gen/assets/scss/css/main.min.css --no-cache --style compressed -E "UTF-8"
-  environment:
-    THEME: LeaveIt
-
 - name: build
-  image: plugins/hugo
-  settings:
-    hugo_version: 0.55
-    validate: true
+  image: alpine
+  commands:
+  - apk --no-cache add git
+  - wget -O- https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-${HUGO_ARCH}.tar.gz | tar xz -C /bin
+  - hugo
 
 - name: publish  
   image: plugins/gh-pages
