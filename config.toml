@@ -52,7 +52,7 @@ preserveTaxonomyNames = true
     subtitle = "Just for Fun"                  # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
-    enableGitalk = true # gitalk 评论系统
+    enableGitalk = false # gitalk 评论系统
 
     google_verification = ""
 
