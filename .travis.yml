@@ -16,8 +16,9 @@ env:
 
 before_install:
   # 安装依赖
-  - wget -q -O libstdc++6.deb http://ftp.us.debian.org/debian/pool/main/g/gcc-9/libstdc++6_9.2.1-21_amd64.deb
-  - sudo dpkg --force-all -i libstdc++6.deb
+  # - wget -q -O libstdc++6.deb http://ftp.us.debian.org/debian/pool/main/g/gcc-9/libstdc++6_9.2.1-21_amd64.deb
+  # - sudo dpkg --force-all -i libstdc++6.deb
+  - sudo apt-get install libstdc++6
   # 安装 hugo （version: v0.54.0）
   - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
   - sudo dpkg -i hugo.deb
