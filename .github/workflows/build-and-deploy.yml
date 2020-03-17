@@ -10,6 +10,6 @@ jobs:
       with:
           submodules: true
     - name: Build
-      uses: lowply/build-hugo@v0.61.0
+      uses: srt32/hugo-action
 
 
