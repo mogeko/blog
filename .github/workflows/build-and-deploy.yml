@@ -1,0 +1,27 @@
+name: Build & Deploy
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    step:
+    - name: Install Hugo
+      run: 
+      - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
+      - sudo dpkg -i hugo.deb
+    - name: Build
+      run: hugo
+    - name: Deploy
+      run:
+      - cd ./public
+      - git init
+      - git config user.name "$USER_NAME"
+      - git config user.email "$USER_EMAIL"
+      - git add .
+      - git commit -m "Update Blog By GitHub Actions With Build $GITHUB_RUN_ID"
+      - git push --force --quiet "https://$DEPOLY_TOKEN@$GH_REF" master:master
+      env:
+      - DEPOLY_TOKEN: ${{ secrets.DEPOLY_TOKEN }}
+      - GH_REF: github.com/Mogeko/mogeko.github.io
+      - USER_NAME: Mogeko
+      - USER_EMAIL: zhengjunyi@live.com
+
