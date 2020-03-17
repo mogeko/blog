@@ -10,6 +10,6 @@ jobs:
       with:
           submodules: true
     - name: Build
-      uses: chabad360/hugo-actions@master
-    
+      uses: lowply/build-hugo@v0.61.0
+
 
