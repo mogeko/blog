@@ -9,17 +9,14 @@ jobs:
       uses: actions/checkout@master
       with:
           submodules: true
+          fetch-depth: 1
     - name: Build
       uses: jakejarvis/hugo-build-action@master
     - name: Deploy
       run: |
         cd ./public
         git init
-        git config user.name "$USER_NAME"
-        git config user.email "$USER_EMAIL"
-        git add .
-        git commit -m "Update Blog By GitHub Actions With Build $GITHUB_RUN_ID"
-        git push --force --quiet "https://$DEPOLY_TOKEN@$GH_REF" master:master
+        
       env:
         DEPOLY_TOKEN: ${{ secrets.DEPOLY_TOKEN }}
         GH_REF: github.com/Mogeko/mogeko.github.io
