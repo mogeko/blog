@@ -25,8 +25,8 @@ jobs:
         git commit -m "Update Blog By GitHub Actions With Build $GITHUB_RUN_ID"
         git push --force --quiet "https://$DEPOLY_TOKEN@$GH_REF" master:master
       env:
-      - DEPOLY_TOKEN: ${{ secrets.DEPOLY_TOKEN }}
-      - GH_REF: github.com/Mogeko/mogeko.github.io
-      - USER_NAME: Mogeko
-      - USER_EMAIL: zhengjunyi@live.com
+        DEPOLY_TOKEN: ${{ secrets.DEPOLY_TOKEN }}
+        GH_REF: github.com/Mogeko/mogeko.github.io
+        USER_NAME: Mogeko
+        USER_EMAIL: zhengjunyi@live.com
 
