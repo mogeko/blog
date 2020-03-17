@@ -15,7 +15,7 @@ jobs:
     - name: Deploy
       uses: x-actions/git-push@v1
       env:
-        PUBLISH_REPO: https://$GITHUB_TOKEN@github.com/Mogeko/mogeko.github.io
+        PUBLISH_REPO: https://${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io
         GITHUB_EMAIL: "zhengjunyi@live.com"
         GITHUB_USERNAME: "Mogeko"
         PUBLISH_BRANCH: master
