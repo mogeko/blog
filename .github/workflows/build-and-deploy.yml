@@ -15,6 +15,7 @@ jobs:
     - name: Deploy
       uses: Mogeko/git-push@master
       with:
+        GIT_COMMIT: Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER
         GITHUB_EMAIL: zhengjunyi@live.com
         GITHUB_USERNAME: Mogeko
         PUBLISH_REPO: github.com/Mogeko/mogeko.github.io
