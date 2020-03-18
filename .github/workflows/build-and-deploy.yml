@@ -15,11 +15,12 @@ jobs:
     - name: Deploy to GitHub
       uses: Mogeko/git-push@master
       with:
-        GITHUB_EMAIL: zhengjunyi@live.com
-        GITHUB_USERNAME: Mogeko
-        GIT_COMMIT: Update Blog By GITHUB Actions With Build '${GITHUB_RUN_ID}'
-        GIT_REPO: github.com/Mogeko/mogeko.github.io
-        GIT_BRANCH: master
+        GH_EMAIL: zhengjunyi@live.com
+        GH_USERNAME: Mogeko
+        GH_REPO: github.com/Mogeko/mogeko.github.io
+        GH_BRANCH: master
         WORK_DIR: "./public"
+      env:
+        GIT_COMMIT: Update Blog By GitHub Actions With Build ${GITHUB_RUN_ID}
 
 
