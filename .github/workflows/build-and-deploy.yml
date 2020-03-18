@@ -13,7 +13,7 @@ jobs:
     - name: Build
       uses: jakejarvis/hugo-build-action@master
     - name: Deploy
-      uses: uses: x-actions/gh-pages@release/v1
+      uses: x-actions/gh-pages@release/v1
       with:
         GITHUB_EMAIL: "zhengjunyi@live.com"
         GITHUB_USERNAME: "Mogeko"
