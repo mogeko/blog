@@ -13,13 +13,12 @@ jobs:
     - name: Build
       uses: jakejarvis/hugo-build-action@master
     - name: Deploy
-      uses: Mogeko/git-push@master
+      uses: uses: x-actions/gh-pages@release/v1
       with:
-        GIT_COMMIT: Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER
-        GITHUB_EMAIL: zhengjunyi@live.com
-        GITHUB_USERNAME: Mogeko
-        PUBLISH_REPO: github.com/Mogeko/mogeko.github.io
+        GITHUB_EMAIL: "zhengjunyi@live.com"
+        GITHUB_USERNAME: "Mogeko"
+        PUBLISH_REPO: https://${{ secrets.GITHUB_TOKEN }}@github.com/owner/repo.git
         PUBLISH_BRANCH: master
-        PUBLISH_DIR: "./public"
+        PUBLISH_DIR: ./public
 
 
