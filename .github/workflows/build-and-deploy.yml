@@ -19,9 +19,7 @@ jobs:
         GH_USERNAME: Mogeko
         GH_REPO: github.com/Mogeko/mogeko.github.io
         GH_BRANCH: master
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         WORK_DIR: "./public"
-      env:
-        GIT_COMMIT: Update Blog By GitHub Actions With Build ${GITHUB_RUN_ID}
 
 
