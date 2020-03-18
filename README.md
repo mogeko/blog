@@ -1,7 +1,7 @@
 # My Blog
 
 
-[![Build Status](https://travis-ci.org/Mogeko/Blog.svg?branch=master)](https://travis-ci.org/Mogeko/Blog)
+![Build & Deploy](https://github.com/Mogeko/Blog/workflows/Build%20&%20Deploy/badge.svg)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
 
