@@ -17,7 +17,7 @@ jobs:
       with:
         GITHUB_EMAIL: zhengjunyi@live.com
         GITHUB_USERNAME: Mogeko
-        GIT_COMMIT: Update Blog By GITHUB Actions With Build $GITHUB_RUN_ID
+        GIT_COMMIT: Update Blog By GITHUB Actions With Build '${GITHUB_RUN_ID}'
         GIT_REPO: github.com/Mogeko/mogeko.github.io
         GIT_BRANCH: master
         WORK_DIR: "./public"
