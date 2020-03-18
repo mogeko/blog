@@ -17,7 +17,7 @@ jobs:
       with:
         GITHUB_EMAIL: "zhengjunyi@live.com"
         GITHUB_USERNAME: "Mogeko"
-        PUBLISH_REPO: https://${{ secrets.GITHUB_TOKEN }}@github.com/owner/repo.git
+        PUBLISH_REPO: https://${{ secrets.GITHUB_TOKEN }}@github.com/Mogeko/mogeko.github.io
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 
