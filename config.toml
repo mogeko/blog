@@ -76,6 +76,9 @@ preserveTaxonomyNames = true
     # Dribbble = "xxoo"
     # Medium = "xxoo"
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "936cecdd2ab935870ca5" # Your client ID
     clientSecret = "39cfc7a3cb9a974b6609f3fdaa637e2917e3e40a" # Your client secret
