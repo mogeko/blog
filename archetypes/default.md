@@ -8,7 +8,7 @@ featured_image:
 description: 
 ---
 <!-- 
-<img alt="" src="https://mogeko.github.io/blog-images/r/{{ replace .Name "-" " " | title }}/" >
+![](https://mogeko.github.io/blog-images/r/{{ replace .Name "-" " " | title }}/)
 <span class="spoiler" ></span>
 &emsp;&emsp;
  -->
