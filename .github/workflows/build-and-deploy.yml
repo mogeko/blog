@@ -12,8 +12,6 @@ jobs:
           fetch-depth: 1
     - name: Build site
       uses: jakejarvis/hugo-build-action@master
-      with:
-        args: --minify
     - name: Deploy to GitHub
       uses: Mogeko/git-push@master
       with:
