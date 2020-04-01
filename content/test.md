@@ -5,7 +5,7 @@
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
 <img alt="" src="https://mogeko.github.io/blog-images/r/test/" >
-<span class="spoiler" ></span>
+{{< spoiler >}}{{< /spoiler >}}
 &emsp;&emsp;
  -->
 
@@ -18,12 +18,12 @@
 <img alt="shields" src="https://img.shields.io/badge/%E9%9A%90%E8%97%8F%E6%96%87%E5%AD%97%20-pass-green.svg" style="float: left; margin: 5px 1em 0px 0px" ><br>
 
 ```html
-<span class="spoiler" ></span>
+{{< spoiler >}}{{< /spoiler >}}
 ```
 
 ## 测试组
 
-<span class="spoiler" >这是一段隐藏文字</span>
+{{< spoiler >}}这是一段隐藏文字{{< /spoiler >}}
 
 # Test 2
 

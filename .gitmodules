@@ -1,3 +1,3 @@
-[submodule "themes/LeaveIt"]
-	path = themes/LeaveIt
-	url = https://github.com/Mogeko/LeaveIt.git
+[submodule "themes/mogege"]
+	path = themes/mogege
+	url = git@github.com:Mogeko/mogege.git
