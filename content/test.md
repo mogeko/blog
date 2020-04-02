@@ -7,6 +7,7 @@
 <img alt="" src="https://mogeko.github.io/blog-images/r/test/" >
 {{< spoiler >}}{{< /spoiler >}}
 &emsp;&emsp;
+```plaintext
  -->
 
 这是一个隐藏的页面，仅用于测试本博客的各项新特性。
@@ -18,12 +19,12 @@
 <img alt="shields" src="https://img.shields.io/badge/%E9%9A%90%E8%97%8F%E6%96%87%E5%AD%97%20-pass-green.svg" style="float: left; margin: 5px 1em 0px 0px" ><br>
 
 ```html
-{{< spoiler >}}{{< /spoiler >}}
+{{</* spoiler */>}} 隐藏文字 {{</* /spoiler */>}}
 ```
 
 ## 测试组
 
-{{< spoiler >}}这是一段隐藏文字{{< /spoiler >}}
+{{< spoiler >}} 隐藏文字 {{< /spoiler >}}
 
 # Test 2
 
@@ -205,7 +206,7 @@ webp 图片兼容性测试
 
 测试 FiraCode
 
-```livescript
+```plaintext
 take = (n, [x, ...xs]:list) -->
     | n <= 0 => []
     | empty list => []
