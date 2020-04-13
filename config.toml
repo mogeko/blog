@@ -50,7 +50,6 @@ preserveTaxonomyNames = true
     author = "Mogeko"                          # Author's name
     avatar = "/blog-images/r/me/avatar.jpg"           # Author's avatar
     subtitle = "Just for Fun"                  # Subtitle
-    cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
     enableGitalk = true # gitalk 评论系统
 
@@ -65,20 +64,6 @@ preserveTaxonomyNames = true
 
     license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
-[params.social]
-    # GitHub = "Mogeko"
-    # Twitter = "xxoo"
-    # Email   = "zhengjunyi@live.com"
-    # Instagram = "xxoo"
-    # Wechat = "/images/me/wechat.png"  # Wechat QRcode image
-    # Facebook = "xxoo"
-    # Telegram = "xxoo"
-    # Dribbble = "xxoo"
-    # Medium = "xxoo"
-
-[markup.goldmark.renderer]
-    unsafe = true
-
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "936cecdd2ab935870ca5" # Your client ID
     clientSecret = "39cfc7a3cb9a974b6609f3fdaa637e2917e3e40a" # Your client secret
@@ -91,3 +76,6 @@ preserveTaxonomyNames = true
     pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
     createIssueManually= true # If it is 'false', it is auto to make a Github issue when the administrators login.
     distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+
+[markup.goldmark.renderer]
+    unsafe = true
