@@ -1,6 +1,6 @@
 ---
  menu: "main"
- notsb: true
+ showComments: false
 ---
 
 # 几只住在本站的工具酱...
