@@ -2,10 +2,10 @@
  menu: "main"
  showComments: false
 ---
-
 # 几只住在本站的工具酱...
 
-## 临时邮箱 <sup style="color:#39b54a" >●</sup>
+<!-- #39b54a -->
+## 临时邮箱 <sup style="color:red" >●</sup>
 地址：[mail.mogeko.me](http://mail.mogeko.me)
 
 用来临时接收邮件的一次性邮箱服务
