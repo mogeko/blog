@@ -15,13 +15,17 @@ jobs:
       with:
         args: --minify
     - name: Deploy to GitHub
-      uses: Mogeko/git-push@master
-      with:
-        GH_EMAIL: zhengjunyi@live.com
-        GH_USERNAME: Mogeko
-        GH_REPO: github.com/Mogeko/mogeko.github.io
-        GH_BRANCH: master
-        GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-        WORK_DIR: "./public"
-
-
+      run: |
+        git config --global user.name 'Mogeko'
+        git config --global user.email 'zhengjunyi@live.com'
+        cd public && git init
+        git remote set-url origin https://${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io
+        for try in $(seq 10); do
+          git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
+          if git push -f; then
+            exit 0
+          else
+            sleep $(shuf -i 3-10 -n 1)
+          fi
+        done
+        exit 1
