@@ -14,14 +14,17 @@ jobs:
       uses: jakejarvis/hugo-build-action@master
       with:
         args: --minify
-    - name: Deploy to GitHub
+    - name: Setup git
       run: |
         git config --global user.name 'Mogeko'
         git config --global user.email 'zhengjunyi@live.com'
+    - name: Deploy to GitHub
+      run: |
         cd public && git init
+        pwd
         for try in $(seq 10); do
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
-          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io"; then
+          if git push -f "https://mogeko:${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io"; then
             exit 0
           else
             sleep $(shuf -i 3-10 -n 1)
