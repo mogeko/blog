@@ -39,7 +39,7 @@ jobs:
         git init && git add .
         for try in $(seq 10); do
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
-          if git push -f "https://mogeko:${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io"; then
+          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io" master:master; then
             exit 0
           else
             sleep $(shuf -i 3-10 -n 1)
