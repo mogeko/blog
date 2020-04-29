@@ -4,6 +4,8 @@ on: [push, pull_request]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    container:
+      image: ubuntu:latest
     steps:
     - name: Checkout
       uses: actions/checkout@master
@@ -21,7 +23,6 @@ jobs:
     - name: Deploy to GitHub
       run: |
         cd public && git init
-        pwd
         for try in $(seq 10); do
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
           if git push -f "https://mogeko:${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io"; then
