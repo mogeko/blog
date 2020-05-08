@@ -1,5 +1,5 @@
 name: Build & Deploy
-on: [push, pull_request]
+on: push
 
 env:
   GH_USERNAME: Mogeko
@@ -52,4 +52,3 @@ jobs:
           fi
         done
         exit 1
-
