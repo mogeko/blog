@@ -1,6 +1,12 @@
 name: Build & Deploy
 on: [push, pull_request]
 
+env:
+  GH_USERNAME: Mogeko
+  GH_EMAIL: zhengjunyi@live.com
+  GH_REPO: github.com/Mogeko/mogeko.github.io
+  GH_BRANCH: master
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,17 +38,18 @@ jobs:
         name: site
     - name: Setup git
       run: |
-        git config --global user.name 'Mogeko'
-        git config --global user.email 'zhengjunyi@live.com'
+        git config --global user.name "${GH_USERNAME}"
+        git config --global user.email "${GH_EMAIL}"
     - name: Deploy to GitHub
       run: |
         git init && git add .
         for try in $(seq 10); do
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
-          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@github.com/Mogeko/mogeko.github.io" master:master; then
+          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@${GH_REPO}" master:${GH_BRANCH}; then
             exit 0
           else
             sleep $(shuf -i 3-10 -n 1)
           fi
         done
         exit 1
+
