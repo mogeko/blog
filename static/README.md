@@ -1,6 +1,9 @@
 # Mogeko`s Blog
 
-[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io) [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) [![theme](https://img.shields.io/badge/Theme-mogege-blueviolet)](https://github.com/Mogeko/mogege)
+[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io)
+[![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+[![Hugo](https://img.shields.io/badge/Power%20by-Hugo-%23ff4088)](https://gohugo.io/)
+[![theme](https://img.shields.io/badge/Theme-mogege-blueviolet)](https://github.com/Mogeko/mogege)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
 
