@@ -1,4 +1,4 @@
-# Mogeko`s Blog
+# Mogeko`s Blog (index)
 
 [![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
