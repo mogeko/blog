@@ -1,7 +1,7 @@
 # My Blog
 
 
-![Blog Deploy](https://github.com/Mogeko/Blog/workflows/Blog%20Deploy/badge.svg)
+[![Blog Deploy](https://github.com/Mogeko/Blog/workflows/Blog%20Deploy/badge.svg?event=push)](https://github.com/Mogeko/Blog/actions)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
 
