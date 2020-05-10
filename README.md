@@ -1,12 +1,10 @@
 # Mogeko`s Blog
 
-
-[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io)&ensp;
-[![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io) [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) [![theme](https://img.shields.io/badge/Theme-mogege-blueviolet)](https://github.com/Mogeko/mogege)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
 
-使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 GitHub Actions 部署到 [mogeko.github.io](https://github.com/Mogeko/mogeko.github.io) 上。
+使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 [GitHub Actions](https://github.com/Mogeko/Blog/actions) 部署到 [mogeko.github.io](https://github.com/Mogeko/mogeko.github.io) 上。
 
 主题使用的是 [mogege](https://github.com/Mogeko/mogege)
 
