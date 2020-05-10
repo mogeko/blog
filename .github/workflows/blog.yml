@@ -1,4 +1,4 @@
-name: Blog Deploy
+name: Mogeko`s Blog
 on: push
 
 env:
