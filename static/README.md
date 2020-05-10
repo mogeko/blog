@@ -1,7 +1,7 @@
 # My Blog
 
 
-[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io)
+[![Mogeko`s Blog](https://github.com/Mogeko/Blog/workflows/Mogeko%60s%20Blog/badge.svg?event=push)](https://mogeko.github.io)&ensp;
 [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
 这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
