@@ -1,6 +1,7 @@
 ---
  title: "TEST"
- notsb: true
+ showComments: false
+ math: true
 ---
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
@@ -215,7 +216,24 @@ take = (n, [x, ...xs]:list) -->
 last3 = reverse >> take 3 >> reverse
 ```
 
+# Test 4
+## KaTeX
 
+```latex
+% Inline math:
+$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 
+% or
+% Block math:
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$
+```
 
+Inline math: $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 
+Block math:
+
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$
