@@ -2,6 +2,7 @@
  title: "TEST"
  showComments: false
  math: true
+ plantuml: true
 ---
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
@@ -237,3 +238,27 @@ Block math:
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$
+
+
+# Test 5
+## PlantUML
+
+```plaintext
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+@enduml
+```
+
+```plantuml
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+@enduml
+```
