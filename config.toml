@@ -51,7 +51,8 @@ preserveTaxonomyNames = true
     avatar = "/blog-images/r/me/avatar.jpg"           # Author's avatar
     subtitle = "Just for Fun"                  # Subtitle
     home_mode = "" # post or other
-    enableGitalk = true # gitalk 评论系统
+    enableGitalk = false # gitalk 评论系统
+    enableUtteranc = true # utteranc 评论系统
 
     google_verification = ""
 
@@ -76,6 +77,12 @@ preserveTaxonomyNames = true
     pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
     createIssueManually= true # If it is 'false', it is auto to make a Github issue when the administrators login.
     distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+
+[params.utteranc] # Homepage: https://utteranc.es
+    repo = "Mogeko/blog-commits" # The repo to store comments
+    issueTerm = "title" # the mapping between blog posts and GitHub issues. 
+    theme = "preferred-color-scheme" # Theme
+    crossorigin = "anonymous" # default: anonymous
 
 [markup.goldmark.renderer]
     unsafe = true
