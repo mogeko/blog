@@ -12,6 +12,7 @@
 主题使用的是 [mogege](https://github.com/Mogeko/mogege)
 
 # LICENSE
+
 ## 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
 
 这是一份普通人可以理解的[许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans)概要 (但不是替代) 。 [免责声明](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#).

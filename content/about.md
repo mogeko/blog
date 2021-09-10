@@ -95,20 +95,19 @@ showComments: false
     }
 </style>
 
-
 <div class="about-info">
     <div class="about-info-left">
         <p>A madman who wants to devoting his life to the free software movement.</p>
         <p>Contact me:</p>
         <ul>
-	<li><p><span class="iconfont icon-mail"></span> Email: <a href="mailto:zhengjunyi@live.com"
+ <li><p><span class="iconfont icon-mail"></span> Email: <a href="mailto:zhengjunyi@live.com"
                     rel="nofollow noreferrer" target="_blank">zhengjunyi@live.com</a></p></li>
-	<li><p><span class="iconfont icon-github"></span> GitHub: <a href="https://github.com/Mogeko"
+ <li><p><span class="iconfont icon-github"></span> GitHub: <a href="https://github.com/Mogeko"
                         rel="nofollow noreferrer" target="_blank">Mogeko</a></p></li>
         </ul>
     </div>
     <div class="about-info-right">
-	    <div class="left-hand"><span style="font-size: 0.5em">&ensp;</span>٩</div>
+     <div class="left-hand"><span style="font-size: 0.5em">&ensp;</span>٩</div>
         <div class="left-ear">▲</div>
         <img alt="Mogeko" src="https://mogeko.me/blog-images/r/me/avatar.jpg">
         <div class="right-ear">▲</div>

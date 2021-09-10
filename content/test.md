@@ -14,8 +14,6 @@
 
 这是一个隐藏的页面，仅用于测试本博客的各项新特性。
 
-
-
 # Test 1
 
 <img alt="shields" src="https://img.shields.io/badge/%E9%9A%90%E8%97%8F%E6%96%87%E5%AD%97%20-pass-green.svg" style="float: left; margin: 5px 1em 0px 0px" ><br>
@@ -218,6 +216,7 @@ last3 = reverse >> take 3 >> reverse
 ```
 
 # Test 4
+
 ## KaTeX
 
 ```latex
@@ -236,11 +235,11 @@ Inline math: $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 Block math:
 
 $$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
-
 # Test 5
+
 ## PlantUML
 
 ```plaintext

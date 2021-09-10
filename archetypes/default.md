@@ -14,14 +14,6 @@ description:
 plaintext
  -->
 
-
-
-
-
-
-
-
-
 <br>
 
 <center>  ·End·  </center>
