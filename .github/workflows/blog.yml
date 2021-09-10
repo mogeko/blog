@@ -8,6 +8,23 @@ env:
   GH_BRANCH: master
 
 jobs:
+  linter:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          MARKDOWN_CONFIG_FILE: .markdownlint.json
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +44,7 @@ jobs:
         path: public
 
   deploy:
-    needs: build
+    needs: [build, linter]
     runs-on: ubuntu-latest
     container:
       image: alpine/git
