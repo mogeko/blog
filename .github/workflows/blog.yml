@@ -2,6 +2,7 @@ name: Mogeko`s Blog
 on: push
 
 env:
+  GH_USERNAME: Mogeko
   GH_EMAIL: zhengjunyi@live.com
   GH_REPO: github.com/Mogeko/mogeko.github.io
   GH_BRANCH: master
@@ -54,7 +55,7 @@ jobs:
         name: site
     - name: Setup git
       run: |
-        git config --global user.name "${GITHUB_ORG}"
+        git config --global user.name "${GH_USERNAME}"
         git config --global user.email "${GH_EMAIL}"
     - name: Deploy to GitHub
       run: |
