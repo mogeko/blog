@@ -2,7 +2,6 @@ name: Mogeko`s Blog
 on: push
 
 env:
-  GH_USERNAME: Mogeko
   GH_EMAIL: zhengjunyi@live.com
   GH_REPO: github.com/Mogeko/mogeko.github.io
   GH_BRANCH: master
@@ -55,17 +54,19 @@ jobs:
         name: site
     - name: Setup git
       run: |
-        git config --global user.name "${GH_USERNAME}"
+        git config --global user.name "${GITHUB_ORG}"
         git config --global user.email "${GH_EMAIL}"
     - name: Deploy to GitHub
       run: |
         git init && git add .
-        for try in $(seq 10); do
+        for try_time in $(seq 0 9); do
+          echo "Deploy the website"
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
           if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@${GH_REPO}" master:${GH_BRANCH}; then
             exit 0
           else
-            sleep $(shuf -i 3-10 -n 1)
+            sleep "$(shuf -i 3-10 -n 1)"
+            echo "Deploy the website, retry: ${try_time}"
           fi
         done
         exit 1
