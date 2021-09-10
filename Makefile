@@ -1,16 +1,21 @@
-BLOG_POSTS = ./content/posts
+BLOG_POSTS := ./content/posts
+NEW_FILE_ID := $(shell printf "%03d\n" $(shell ls -l ${BLOG_POSTS} | grep "^-" | wc -l))
 CMD = hugo
 
 build:
-	${CMD}
+	@${CMD}
 
 dev:
-	${CMD} server
+	@${CMD} server
 
 push:
 	@git add .
 	@git commit -m "Update: $(shell date +%Y-%m-%d)"
 	@git push
 
-# new:
-	# @echo $(shell ls -l ${BLOG_POSTS} | grep "^-" | wc -l | awk '{printf "%03d\n", $1}')
+new:
+	@hugo new posts/${NEW_FILE_ID}.md
+
+clean:
+	@rm --force --recursive public
+	@rm --force --recursive resources
