@@ -63,7 +63,7 @@ jobs:
         for try_time in $(seq 0 9); do
           echo "Deploy the website"
           git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
-          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@${GH_REPO}" "master:${GH_BRANCH}"; then
+          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@${GH_REPO}" master:"${GH_BRANCH}"; then
             exit 0
           else
             echo "Deploy the website, retry: ${try_time}"
