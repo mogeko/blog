@@ -1,5 +1,6 @@
-BLOG_POSTS := ./content/posts
-NEW_FILE_ID := $(shell printf "%03d\n" $(shell ls -l ${BLOG_POSTS} | grep "^-" | wc -l))
+BLOG_POSTS  := ./content/posts
+POSTS_NUMS  := $(shell ls -l ${BLOG_POSTS} | grep "^-" | wc -l)
+NEW_FILE_ID := $(shell printf "%03d\n" ${POSTS_NUMS})
 CMD = hugo
 
 build:
