@@ -24,7 +24,7 @@
 			"source.fixAll.markdownlint": true
 		},
 		"markdownlint.config": {
-			"extends": "/workspaces/Blog/.github/.markdownlint.json"
+			"extends": "/workspaces/Blog/.github/linters/.markdownlint.json"
 		},
 		"markdownlint.ignore": [
 			"LICENSE.md"
