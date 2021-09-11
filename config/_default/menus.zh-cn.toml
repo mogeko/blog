@@ -1,0 +1,29 @@
+[[main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "archive"
+  weight = 1
+
+[[main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "posts"
+  weight = 2
+
+[[main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "categories"
+  weight = 3
+
+[[main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "tags"
+  weight = 4
+
+[[main]]
+  identifier = "about"
+  name = "About"
+  url = "about"
+  weight = 5

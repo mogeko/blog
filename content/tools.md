@@ -1,6 +1,5 @@
 ---
- menu: "main"
- showComments: false
+type: tools
 ---
 # 几只住在本站的工具酱...
 

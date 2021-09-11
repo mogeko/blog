@@ -1,15 +1,12 @@
 ---
- title: "TEST"
- showComments: false
- math: true
- plantuml: true
+title: TEST
+type: tools
 ---
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
 <img alt="" src="https://mogeko.github.io/blog-images/r/test/" >
 {{< spoiler >}}{{< /spoiler >}}
 &emsp;&emsp;
-```plaintext
  -->
 
 这是一个隐藏的页面，仅用于测试本博客的各项新特性。
@@ -206,7 +203,7 @@ webp 图片兼容性测试
 
 测试 FiraCode
 
-```plaintext
+```haskell
 take = (n, [x, ...xs]:list) -->
     | n <= 0 => []
     | empty list => []
@@ -242,7 +239,7 @@ $$
 
 ## PlantUML
 
-```plaintext
+```$:plantuml
 @startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
