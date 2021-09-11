@@ -1,6 +1,8 @@
 ---
 title: TEST
 type: tools
+libraries:
+- katex
 ---
 <!-- 
 <img alt="shields" src="" style="float: left; margin: 5px 1em 0px 0px" >
@@ -217,29 +219,26 @@ last3 = reverse >> take 3 >> reverse
 ## KaTeX
 
 ```latex
-% Inline math:
-$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
-
-% or
-% Block math:
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$
+Inline math: $ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $
 ```
 
-Inline math: $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+Inline math: $ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $
+
+```latex
+Block math:
+
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
+```
 
 Block math:
 
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
 
 # Test 5
 
 ## PlantUML
 
-```$:plantuml
+```txt
 @startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
