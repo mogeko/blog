@@ -28,7 +28,7 @@ homeHeaderType = "text" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
-showMobileMenuTerms = ["tags", "categories", "series"]
+showMobileMenuTerms = ["tags", "categories"] # tags, categories, series
 
 # navbar
 enableThemeChange = true # site color theme
