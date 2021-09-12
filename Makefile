@@ -9,9 +9,11 @@ build:
 dev:
 	@${CMD} server
 
-push:
+commit:
 	@git add .
 	@git commit -m "Update: $(shell date +%Y-%m-%d)"
+
+push: commit
 	@git push
 
 new:
