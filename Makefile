@@ -12,6 +12,7 @@ dev:
 push:
 	@git add .
 	@git commit -m "Update: $(shell date +%Y-%m-%d)"
+	@git push
 
 new:
 	@hugo new posts/${NEW_FILE_ID}.md
