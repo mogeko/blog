@@ -13,7 +13,3 @@ description:
 {{< spoiler >}}{{< /spoiler >}}
 &emsp;&emsp;
  -->
-
-<br>
-
-<center>  ·End·  </center>

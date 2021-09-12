@@ -187,7 +187,13 @@ commento = false
 
 # possible share name: "facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "whatsapp", "telegram"
 [[share]]
+  name = "facebook"
+[[share]]
+  name = "twitter"
+[[share]]
   name = "weibo"
+[[share]]
+  name = "reddit"
 [[share]]
   name = "douban"
 [[share]]
