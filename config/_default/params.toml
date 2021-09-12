@@ -54,7 +54,7 @@ bioImageUrl = "https://avatars.githubusercontent.com/u/26341224" # image url lik
 useGravatar = false # we use this option highest priority
 location = "Debrecen, Hungary"
 organization = ""
-link = "https://mogeko.io"
+link = "https://mogeko.me"
 
 # sidebar
 enableBio = true # in home page sidebar
