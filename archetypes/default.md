@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: 
 date: {{ .Date }}
 draft: false
 tags: []
@@ -11,7 +12,6 @@ description:
 ![](https://mogeko.github.io/blog-images/r/{{ replace .Name "-" " " | title }}/)
 {{< spoiler >}}{{< /spoiler >}}
 &emsp;&emsp;
-plaintext
  -->
 
 <br>
