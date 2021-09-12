@@ -47,7 +47,7 @@ googleAnalytics = "UA-104502658-2"
     baseName = "index"
     isPlainText = true
     notAlternative = true
-    
+
 [taxonomies]
   category = "categories"
   tag = "tags"
