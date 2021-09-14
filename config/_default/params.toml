@@ -102,7 +102,7 @@ commento = false
 
 [utterances]       # https://utteranc.es/
   owner = "Mogeko"              # Your GitHub ID
-  repo = "blog-commit-test"               # The repo to store comments
+  repo = "blog-commits"               # The repo to store comments
   issueTerm = "title"          # pathname (default), title, url, og:title
   message = ""      # Optional
   link = ""         # Optional
