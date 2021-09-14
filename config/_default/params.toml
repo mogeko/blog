@@ -101,8 +101,8 @@ commento = false
   clientSecret = ""       # Your client secret
 
 [utterances]       # https://utteranc.es/
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
+  owner = "Mogeko"              # Your GitHub ID
+  repo = "blog-commits"               # The repo to store comments
   message = ""      # Optional
   link = ""         # Optional
 
