@@ -1,6 +1,6 @@
 baseURL = "https://mogeko.me" # The URL of your site.
 title = "Mogeko's Blog" # Title of your site
-theme = "zzo" # Name of Zzo theme folder in `themes/`.
+theme = "zzo-dev" # Name of Zzo theme folder in `themes/`.
 
 defaultContentLanguage = "zh" # Default language to use (if you setup multilingual)
 defaultContentLanguageInSubdir = true # baseURL/en/, baseURL/kr/ ...
