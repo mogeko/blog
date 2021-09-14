@@ -79,7 +79,7 @@ enableSidebarPostsByOrder = false # another lists in the sidebar
 showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
-enableLangChange = true # show button at bottom left of footer.
+enableLangChange = false # show button at bottom left of footer.
 
 # service
 googleTagManager = "" # GTM-XXXXXX
@@ -103,7 +103,7 @@ commento = false
 [utterances]       # https://utteranc.es/
   owner = "Mogeko"              # Your GitHub ID
   repo = "blog-commits"               # The repo to store comments
-  issueTerm="title"           # pathname (default), title, url, og:title
+  issueTerm = "title"          # pathname (default), title, url, og:title
   message = ""      # Optional
   link = ""         # Optional
 
