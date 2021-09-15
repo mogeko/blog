@@ -35,7 +35,8 @@
 	"extensions": [
 		"bungcip.better-toml",
 		"davidanson.vscode-markdownlint",
-		"takumii.markdowntable"
+		"takumii.markdowntable",
+		"mirone.milkdown"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
