@@ -47,28 +47,18 @@ jobs:
   deploy:
     needs: [build, linter]
     runs-on: ubuntu-latest
-    container:
-      image: alpine/git
     steps:
     - name: Download Artifact
       uses: actions/download-artifact@v2
       with:
         name: site
-    - name: Setup git
-      run: |
-        git config --global user.name "${GH_USERNAME}"
-        git config --global user.email "${GH_EMAIL}"
     - name: Deploy to GitHub
-      run: |
-        git init && git add .
-        for try_time in $(seq 0 9); do
-          echo "Deploy the website"
-          git commit -m "Build By GitHub Actions on $(date "+%Y-%m-%d %T")"
-          if git push -f "https://${{ secrets.DEPLOY_TOKEN }}@${GH_REPO}" master:"${GH_BRANCH}"; then
-            exit 0
-          else
-            echo "Deploy the website, retry: ${try_time}"
-            sleep "$(shuf -i 3-10 -n 1)"
-          fi
-        done
-        exit 1
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        folder: .
+        branch: ${GH_BRANCH}
+        token: ${{ secrets.DEPLOY_TOKEN }}
+        git-config-name: ${GH_USERNAME}
+        git-config-email: ${GH_EMAIL}
+        repository-name: ${GH_REPO}
+        single-commit: true
