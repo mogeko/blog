@@ -1,24 +1,24 @@
-BLOG_POSTS  := ./content/posts/zh-cn
-POSTS_NUMS  := $(shell ls -l ${BLOG_POSTS} | grep "^-" | wc -l)
-NEW_FILE_ID := $(shell printf "%03d\n" ${POSTS_NUMS})
+BLOG_POSTS  ?= ./content/posts/zh-cn
+POSTS_NUMS  := $(shell ls -l $(BLOG_POSTS) | grep "^-" | wc -l)
+NEW_FILE_ID := $(shell printf "%03d\n" $(POSTS_NUMS))
 CMD = hugo
+GIT = git
 
-build:
-	@${CMD}
+build: $(BLOG_POSTS)
+	@$(CMD)
 
-dev:
-	@${CMD} server
+dev: $(BLOG_POSTS)
+	@$(CMD) server
+
+new: $(BLOG_POSTS)
+	@$(CMD) new posts/zh-cn/$(NEW_FILE_ID).md
 
 commit:
-	@git add .
-	@git commit -m "Update: $(shell date +%Y-%m-%d)"
+	@$(GIT) add .
+	@$(GIT) commit -m "Update: $(shell date +%Y-%m-%d)"
 
 push: commit
-	@git push
-
-new:
-	@hugo new posts/zh-cn/${NEW_FILE_ID}.md
+	@$(GIT) push
 
 clean:
-	@rm --force --recursive public
-	@rm --force --recursive resources
+	@$(GIT) clean -Xdf
