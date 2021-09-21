@@ -53,17 +53,16 @@ jobs:
       with:
           fetch-depth: 1
     - name: Download Artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v1
       with:
         name: site
-        path: public
     - name: Deploy to GitHub
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        folder: public
-        branch: ${GH_BRANCH}
+        folder: site
+        branch: master
         token: ${{ secrets.DEPLOY_TOKEN }}
-        git-config-name: ${GH_USERNAME}
-        git-config-email: ${GH_EMAIL}
-        repository-name: ${GH_REPO}
+        git-config-name: Mogeko
+        git-config-email: zhengjunyi@live.com
+        repository-name: Mogeko/mogeko.github.io
         single-commit: true
