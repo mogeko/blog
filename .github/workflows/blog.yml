@@ -1,11 +1,6 @@
 name: Mogeko`s Blog
-on: push
 
-env:
-  GH_USERNAME: Mogeko
-  GH_EMAIL: zhengjunyi@live.com
-  GH_REPO: Mogeko/mogeko.github.io
-  GH_BRANCH: master
+on: push
 
 jobs:
   linter:
@@ -65,4 +60,3 @@ jobs:
         git-config-name: Mogeko
         git-config-email: zhengjunyi@live.com
         repository-name: Mogeko/mogeko.github.io
-        single-commit: true
