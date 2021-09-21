@@ -4,7 +4,7 @@ on: push
 env:
   GH_USERNAME: Mogeko
   GH_EMAIL: zhengjunyi@live.com
-  GH_REPO: github.com/Mogeko/mogeko.github.io
+  GH_REPO: Mogeko/mogeko.github.io
   GH_BRANCH: master
 
 jobs:
@@ -56,10 +56,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: site
+        path: public
     - name: Deploy to GitHub
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        folder: .
+        folder: public
         branch: ${GH_BRANCH}
         token: ${{ secrets.DEPLOY_TOKEN }}
         git-config-name: ${GH_USERNAME}
