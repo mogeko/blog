@@ -34,9 +34,7 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"bungcip.better-toml",
-		"davidanson.vscode-markdownlint",
-		"takumii.markdowntable",
-		"mirone.milkdown"
+		"davidanson.vscode-markdownlint"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
