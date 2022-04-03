@@ -1,19 +1,17 @@
-BLOG_POSTS  ?= ./content/posts/zh-cn
-POSTS_NUMS  := $(shell ls -l $(BLOG_POSTS) | grep "^-" | wc -l)
-NEW_FILE_ID := $(shell printf "%03d\n" $(POSTS_NUMS))
+BLOG_POSTS  = $(shell pwd)/content/posts/zh-cn
 
-CMD = hugo
-IDE = code
-GIT = git
+CMD = env hugo
+IDE = env code
+GIT = env git
 
 build: $(BLOG_POSTS)
 	@$(CMD)
 
 dev: $(BLOG_POSTS)
-	@$(CMD) server
+	@-$(CMD) server
 
 new: $(BLOG_POSTS)
-	@$(CMD) new posts/zh-cn/$(NEW_FILE_ID).md
+	@$(CMD) new $(BLOG_POSTS)/$(NEW_FILE_ID).md
 	@$(IDE) $(BLOG_POSTS)/$(NEW_FILE_ID).md
 
 commit:
