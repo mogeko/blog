@@ -19,7 +19,7 @@ commit:
 	@-$(GIT) commit -m "Update: $(shell date +%Y-%m-%d)"
 
 push: commit
-	@$(GIT) push
+	@-$(GIT) push
 
 clean:
 	@$(GIT) clean -Xdf
