@@ -15,8 +15,8 @@ new: $(BLOG_POSTS)
 	@$(IDE) $(BLOG_POSTS)/$(NEW_FILE_ID).md
 
 commit:
-	@$(GIT) add .
-	@$(GIT) commit -m "Update: $(shell date +%Y-%m-%d)"
+	@-$(GIT) add .
+	@-$(GIT) commit -m "Update: $(shell date +%Y-%m-%d)"
 
 push: commit
 	@$(GIT) push
