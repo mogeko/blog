@@ -28,7 +28,7 @@ GitHub 地址: [Mogeko/android-toolchain](https://github.com/Mogeko/android-tool
 
 从 Android NDK 中提取的独立交叉编译工具链，可以用来在 x86_64 架构的 PC 上编译在 Android 中运行的程序和库
 
-支持的系统 (x86_64): Linux/MacOS/Windows
+支持的系统 (x86_64): Linux/macOS/Windows
 
 支持的目标平台: arm/arm64/mips/mips64/x86/x86_64
 
