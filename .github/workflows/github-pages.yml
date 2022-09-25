@@ -1,0 +1,51 @@
+name: Deploy Hugo site to Pages
+
+on:
+  push:
+    branches: [$default-branch]
+workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          submodules: recursive
+          fetch-depth: 1
+      - name: Build site
+        uses: jakejarvis/hugo-build-action@master
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        with:
+          args: --minify
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
