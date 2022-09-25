@@ -21,19 +21,27 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.104.0
     steps:
       - name: Checkout
         uses: actions/checkout@master
         with:
           submodules: recursive
           fetch-depth: 1
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${HUGO_VERSION}
+          extended: true
       - name: Build site
-        uses: jakejarvis/hugo-build-action@master
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        with:
-          args: --minify
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
