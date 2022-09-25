@@ -35,7 +35,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: ${HUGO_VERSION}
+          hugo-version: ${{ env.MHUGO_VERSION }}
           extended: true
       - name: Build site
         env:
