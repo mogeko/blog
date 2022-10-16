@@ -5,11 +5,11 @@
 [![Hugo](https://img.shields.io/badge/Power%20by-Hugo-%23ff4088)](https://gohugo.io/)
 [![theme](https://img.shields.io/badge/Theme-zzo-blueviolet)](https://github.com/zzossig/hugo-theme-zzo)
 
-这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**
+这是 Mogeko 的个人博客，地址：**<https://mogeko.me>**。
 
-使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 [GitHub Actions](https://github.com/Mogeko/Blog/actions) 部署到 [mogeko.github.io](https://github.com/Mogeko/mogeko.github.io) 上。
+使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 [GitHub Actions](https://github.com/Mogeko/Blog/actions) 部署到 [GitHub Pages](https://pages.github.com) 上。
 
-主题使用的是 [zzo](https://github.com/zzossig/hugo-theme-zzo)
+主题使用的是 [zzo](https://github.com/zzossig/hugo-theme-zzo)。
 
 # LICENSE
 
