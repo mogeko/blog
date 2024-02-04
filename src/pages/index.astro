@@ -28,7 +28,7 @@ const posts = (
 ---
 
 <Layout title={siteConfig.title}>
-  <main class="flex-1">
+  <main class="mx-6 mb-32 mt-8 flex-1">
     <section class="flex flex-col justify-center px-6 py-16">
       <header class="flex flex-col gap-1">
         <h1 class="text-4xl text-primary-foreground">
@@ -42,7 +42,7 @@ const posts = (
       </header>
       {author.bio && <p class="pt-8 text-lg">{author.bio}</p>}
     </section>
-    <section class="flex flex-col justify-center gap-7 px-6">
+    <section class="mb-24 flex flex-col justify-center gap-7 px-6">
       {
         posts.map(([year, posts]) => (
           <div class="flex flex-col gap-2">
