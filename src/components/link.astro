@@ -1,0 +1,15 @@
+---
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+
+const { class: className, ...props } = Astro.props;
+---
+
+<a
+  class:list={[
+    "relative font-bold text-primary underline-offset-4 hover:underline",
+    className,
+  ]}
+  {...props}
+>
+  <slot />
+</a>
