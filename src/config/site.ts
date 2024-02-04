@@ -1,6 +1,11 @@
 export const siteConfig: SiteConfig = {
   title: "Mogeko's Blog",
-  author: { name: "Mogeko", url: "https://github.com/mogeko" },
+  author: {
+    name: "Mogeko",
+    url: "https://github.com/mogeko",
+    description: "A web developer",
+    bio: "I'm a web developer who loves to write about web technologies.",
+  },
   footer: {
     license: {
       name: "CC BY-NC-SA 4.0",
@@ -12,7 +17,7 @@ export const siteConfig: SiteConfig = {
 
 type SiteConfig = {
   title: string;
-  author: { name: string; url: string };
+  author: { name: string; url: string; description?: string; bio?: string };
   footer?: {
     license: { name: string; url: string };
     copyrightYear: string | number;
