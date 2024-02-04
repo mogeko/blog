@@ -5,5 +5,7 @@
     "paths": { "@/*": ["./src/*"] },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
-  }
+  },
+  "include": ["src/**/*", "*.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }
