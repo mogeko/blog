@@ -4,7 +4,6 @@ export const siteConfig: SiteConfig = {
     name: "Mogeko",
     url: "https://github.com/mogeko",
     description: "A web developer",
-    bio: "I'm a web developer who loves to write about web technologies.",
   },
   footer: {
     license: {

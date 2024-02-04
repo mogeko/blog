@@ -2,7 +2,29 @@
 import "@/styles/globals.css";
 
 import Layout from "@/layouts/base-layout.astro";
+import Link from "@/components/link.astro";
 import { siteConfig } from "@/config/site";
+import { getCollection } from "astro:content";
+import { getYear, getTime, format } from "date-fns";
+
+const { author } = siteConfig;
+const posts = (
+  await getCollection("posts", ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  })
+)
+  .sort(({ data: a }, { data: b }) => getTime(b.date) - getTime(a.date))
+  .reduce(
+    (acc, post) => {
+      const year = getYear(post.data.date);
+      const index = acc.findIndex(([y]) => y === year);
+
+      return index > -1
+        ? (acc[index][1].push(post), acc)
+        : acc.concat([[year, [post]]]);
+    },
+    [] as [number, any[]][],
+  );
 ---
 
 <Layout title={siteConfig.title}>
@@ -10,24 +32,32 @@ import { siteConfig } from "@/config/site";
     <section class="flex flex-col justify-center px-6 py-16">
       <header class="flex flex-col gap-1">
         <h1 class="text-4xl text-primary-foreground">
-          Hi! I'm <span class="text-primary">{siteConfig.author.name}</span>
+          Hi! I'm <span class="text-primary">{author.name}</span>
         </h1>
         {
-          siteConfig.author.description && (
-            <h2 class="text-3xl text-secondary">
-              {siteConfig.author.description}
-            </h2>
+          author.description && (
+            <h2 class="text-3xl text-secondary">{author.description}</h2>
           )
         }
       </header>
-      {
-        siteConfig.author.bio && (
-          <p class="pt-8 text-lg">{siteConfig.author.bio}</p>
-        )
-      }
+      {author.bio && <p class="pt-8 text-lg">{author.bio}</p>}
     </section>
-    <section class="flex flex-col justify-center">
-      {/** TODO: List of posts */}
+    <section class="flex flex-col justify-center gap-7 px-6">
+      {
+        posts.map(([year, posts]) => (
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl font-bold">{year}</h2>
+            {posts.map(({ data, slug }) => (
+              <p class="inline-flex flex-row items-baseline gap-1 text-2xl">
+                <Link href={`./posts/${slug}`}>{data.title}</Link>
+                <span class="select-none text-xl text-muted">
+                  {format(data.date, "MM/dd")}
+                </span>
+              </p>
+            ))}
+          </div>
+        ))
+      }
     </section>
   </main>
 </Layout>
