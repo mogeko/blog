@@ -1,8 +1,0 @@
-[submodule "themes/zzo-dev"]
-	path = themes/zzo-dev
-	url = https://github.com/Mogeko/hugo-theme-zzo.git
-	branch = dev
-
-[submodule "themes/zzo"]
-	path = themes/zzo
-	url = https://github.com/zzossig/hugo-theme-zzo.git
