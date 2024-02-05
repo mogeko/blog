@@ -1,0 +1,21 @@
+---
+const props = Astro.props;
+
+type Props = astroHTML.JSX.HTMLAttributes;
+---
+
+<code {...props}><slot /></code>
+
+<style>
+  code:not(:where(.block-code *)) {
+    position: relative;
+    border-radius: 0.25rem /* 4px */;
+    background-color: hsl(var(--muted));
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    padding: 0.2rem 0.3rem /* 3.2px 4.8px */;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    font-weight: 600;
+  }
+</style>

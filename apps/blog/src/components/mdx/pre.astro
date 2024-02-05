@@ -1,0 +1,7 @@
+---
+const { class: className, ...props } = Astro.props;
+
+type Props = astroHTML.JSX.HTMLAttributes;
+---
+
+<pre class:list={["block-code"]} {...props}><slot /></pre>

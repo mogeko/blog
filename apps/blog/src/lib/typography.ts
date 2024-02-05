@@ -5,6 +5,8 @@ import Heading4 from "@/components/mdx/h4.astro";
 import Paragraph from "@/components/mdx/p.astro";
 import Blockquote from "@/components/mdx/blockquote.astro";
 import List from "@/components/mdx/ul.astro";
+import Preformatted from "@/components/mdx/pre.astro";
+import inlineCode from "@/components/mdx/code.astro";
 
 export const components = {
   h1: Heading1,
@@ -14,4 +16,6 @@ export const components = {
   p: Paragraph,
   blockquote: Blockquote,
   ul: List,
+  pre: Preformatted,
+  code: inlineCode,
 };
