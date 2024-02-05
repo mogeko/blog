@@ -14,7 +14,7 @@ type Props = { title: string };
     <meta charset="utf-8" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen bg-background font-sans antialiased">
+  <body class="bg-background min-h-screen font-sans antialiased">
     <slot name="before-header" />
     <div class="relative m-auto flex min-h-screen max-w-3xl flex-col">
       <slot name="header" />
