@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import Layout from "@/layouts/base-layout.astro";
 import Link from "@/components/link.astro";
 import { siteConfig } from "@/config/site";
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import { getYear, getTime, format } from "date-fns";
 
 const { author } = siteConfig;
@@ -23,7 +23,7 @@ const posts = (
         ? (acc[index][1].push(post), acc)
         : acc.concat([[year, [post]]]);
     },
-    [] as [number, any[]][],
+    [] as [number, CollectionEntry<"posts">[]][],
   );
 ---
 
