@@ -6,4 +6,4 @@
 
 # LICENSE
 
-The code in this project is licensed under [MIT](./LICENSE), content licensed under [CC BY-NC-SA 4.0](./src/pages/posts/_LICENSE).
+The code in this project is licensed under [MIT](./LICENSE), content licensed under [CC BY-NC-SA 4.0](./apps/blog/src/content/LICENSE).

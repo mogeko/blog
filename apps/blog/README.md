@@ -52,3 +52,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+# LICENSE
+
+The code in this project is licensed under [MIT](./LICENSE), content licensed under [CC BY-NC-SA 4.0](./src/content/LICENSE).

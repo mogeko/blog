@@ -7,6 +7,15 @@ dist/
 # dependencies
 node_modules/
 
+# testing
+coverage/
+
+# turbo
+.turbo/
+
+# vercel
+.vercel/
+
 # logs
 npm-debug.log*
 yarn-debug.log*
@@ -20,15 +29,6 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 .env.production
-
-# testing
-coverage
-
-# turbo
-.turbo
-
-# vercel
-.vercel
 
 # misc
 .DS_Store
