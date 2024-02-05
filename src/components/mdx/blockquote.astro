@@ -1,0 +1,9 @@
+---
+const { class: className, ...props } = Astro.props;
+
+type Props = astroHTML.JSX.BlockquoteHTMLAttributes;
+---
+
+<blockquote class:list={["mt-6 border-l-2 pl-6 italic", className]} {...props}>
+  <slot />
+</blockquote>

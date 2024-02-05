@@ -1,0 +1,9 @@
+---
+const { class: className, ...props } = Astro.props;
+
+type Props = astroHTML.JSX.HTMLAttributes;
+---
+
+<p class:list={["leading-7 [&:not(:first-child)]:mt-6", className]} {...props}>
+  <slot />
+</p>

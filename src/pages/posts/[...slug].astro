@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/base-layout.astro";
+import { getCollection } from "astro:content";
+import { components } from "@/lib/typography";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection("posts");
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <article class="flex-1">
+    <main><Content components={components} /></main>
+  </article>
+</Layout>

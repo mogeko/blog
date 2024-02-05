@@ -1,0 +1,9 @@
+---
+const { class: className, ...props } = Astro.props;
+
+type Props = astroHTML.JSX.HTMLAttributes;
+---
+
+<ul class:list={["my-6 ml-6 list-disc [&>li]:mt-2", className]} {...props}>
+  <slot />
+</ul>

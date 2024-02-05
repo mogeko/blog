@@ -1,0 +1,12 @@
+---
+const { class: className, ...props } = Astro.props;
+
+type Props = astroHTML.JSX.HTMLAttributes;
+---
+
+<h3
+  class:list={["scroll-m-20 text-2xl font-semibold tracking-tight", className]}
+  {...props}
+>
+  <slot />
+</h3>
